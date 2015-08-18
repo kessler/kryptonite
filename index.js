@@ -11,4 +11,8 @@ if (!command) {
 	process.exit(1)
 }
 
-require('./' + command)
+if (command === 'decrypt') {
+	require('./encrypt')
+} else {
+	require('./' + command)
+}

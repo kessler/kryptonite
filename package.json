@@ -6,6 +6,9 @@
   "scripts": {
     "test": "mocha -R spec"
   },
+  "bin": {
+    "kryptonite": "index.js"
+    },
   "dependencies": {
     "rc": "^1.1.0",
     "read": "^1.0.6"
