@@ -1,6 +1,6 @@
 {
   "name": "kryptonite",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "bin": {
     "kryptonite": "index.js"
-    },
+  },
   "dependencies": {
     "rc": "^1.1.0",
     "read": "^1.0.6"
