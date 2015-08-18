@@ -2,10 +2,10 @@
 
 A personal cli tool for encryption/decryption
 
-rc config defaults to "kryptonite", but can be overridden using the first paramter after the command (without --), e.g
+rc config defaults to "kryptonite", but can be overridden using the first paramter before the command (without --), e.g
 
 ```
-kryptonite encrypt myapp
+kryptonite myapp encrypt
 ```
 
 ## tools
