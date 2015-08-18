@@ -1,0 +1,23 @@
+{
+  "name": "kryptonite",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "dependencies": {
+    "rc": "^1.1.0",
+    "read": "^1.0.6"
+  },
+  "author": "Yaniv Kessler",
+  "bugs": {
+    "url": "https://github.com/kessler/kryptonite/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kessler/kryptonite"
+  },
+  "homepage": "https://github.com/kessler/kryptonite",
+  "license": "MIT"
+}
