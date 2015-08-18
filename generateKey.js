@@ -1,4 +1,5 @@
 var fs = require('fs')
+var config = require('./config')
 var crypto = require('crypto')
 var read = require('read')
 
@@ -13,7 +14,7 @@ function generateKey(key, salt) {
 	return result
 }
 
-read({ prompt: 'filename:', default: '.kryptoniterc' }, function (err, file) {
+read({ prompt: 'filename:', default: config.generatedKeyFilename }, function (err, file) {
 	if (err) {
 		console.log(err)
 		return process.exit(1)

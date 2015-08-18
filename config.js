@@ -1,8 +1,17 @@
-var configName = 'kryptonite'
+var argv = require('minimist')(process.argv.slice(2))
 
-// a little hack 
-if (process.argv[3] && process.argv[3][0] !== '-') {
-	configName = process.argv[3]
+var configName = 'kryptonite'
+var command
+
+if (argv._.length === 2) {
+	configName = argv._[0]
+	command = argv._[1]
+} else {
+	command = argv._[0]
 }
 
-module.exports = require('rc')(configName)
+module.exports = require('rc')(configName, {
+	command: command,
+	appName: configName,
+	generatedKeyFilename: '.' + configName + 'rc'
+}, argv)
