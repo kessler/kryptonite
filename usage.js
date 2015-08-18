@@ -1,2 +1,2 @@
 module.exports = 
-'\n\nkryptonite [appName] generateKey| encrypt|decrypt|hmac\n'
+'\nkryptonite [appName] generateKey|encrypt|decrypt|hmac\n'
